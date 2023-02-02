@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+    width: 300px;
+    height: 220px;
+}
+.column{
+    float: left;
+    width: 25%;
+    
+}
+input[type="text"] {
+    height: 30px;
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px ;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+input[type="text"]::placeholder{
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+p{
+    font-style: italic;
+    color: brown;
+    text-align: left;
+}
+h1{
+    display: inline-block;
+    margin-right: 100px;
+    font-style: inherit;
+}
+
+.row {
+    width: 100%;
+    float: left;
+    
+}
+.container{
+    display: inline-block;
+}
+div{
+    display: inline;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Cocktail App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onload="loadSearchData()">
+    <div class="container-fluid">
+        <div class="search">
+            <h1>COCKTAIL API</h1>
+          <input type="text" placeholder="search here..." id="filterInput" onkeyup="filterFunction()">        
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                                <a href="https://vinepair.com/cocktail-recipe/negroni/">
+                                    <img src="https://vinepair.com/wp-content/uploads/2022/09/negroni-card-375x450.jpg" alt="">
+                                </a>
+                                <p>NEGRONI</p>
+                    </div>
+                    <div class="column">
+                                <a href="https://vinepair.com/cocktail-recipe/old-fashioned/">
+                                    <img src="https://vinepair.com/wp-content/uploads/2018/03/Old-Fashioned-Recipe-card.jpg" alt="">
+                                </a>
+                                <p>OLD FASHIONED</p>
+                    </div>
+                    <div class="column">
+                                <a href="https://vinepair.com/cocktail-recipe/gin-martini/">
+                                    <img src="https://vinepair.com/wp-content/uploads/2018/03/Gin-Martini-Recipe-card.jpg" alt="">
+                                </a>
+                                <p>DRY MARTINI</p>
+                    </div>
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/margarita/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/Margarita-Recipe-card.jpg" alt="">
+                            </a>
+                            <p>MAGARITA</p>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/daiquiri/">
+                                <img src="https://vinepair.com/wp-content/uploads/2022/01/50mostpopularcocktails2022_internal_daiquiri.jpg" alt="">
+                            </a>
+                            <p>DAIQUIRI</p>
+                    </div>
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/ultimate-aperol-spritz-recipe/">
+                                <img src="https://vinepair.com/wp-content/uploads/2019/03/aperolspritz_card.jpg" alt="">
+                            </a>
+                            <p>APEROL SPRITZ</p>
+                    </div>    
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/the-espresso-martini-recipe/">
+                                <img src="https://vinepair.com/wp-content/uploads/2020/07/espressomartini_card.jpg" alt="">
+                            </a>
+                            <p>ESPRESSO MARTINI</p>
+                    </div>    
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/manhattan/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/Manhattan-Recipe-card.jpg" alt="">
+                            </a>
+                            <p>MANHATTAN</p>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/mojito/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/Mojito-Recipe-card.jpg" alt="">
+                            </a>
+                            <p>MOJITO</p>
+                    </div>    
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/whiskey-sour-recipe/">
+                                <img src="https://vinepair.com/wp-content/uploads/2022/01/50mostpopularcocktails2022_internal_whiskeysour.jpg" alt="">
+                            </a>
+                            <p>WHISKEY SOUR</p>
+                    </div>    
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/moscow-mule-recipe/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/moscow-card.jpg" alt="">
+                            </a>
+                            <p>MOSCOW MULE</p>
+                    </div>    
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/boulevardier/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/Boulevardier-Recipe-card.jpg" alt="">
+                            </a>
+                            <p>BOULIVARDIER</p>
+                    </div> 
+                </div><br>
+                <div class="row">  
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/penicillin-scotch-cocktail-recipe/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/01/pen-card.jpg" alt="">
+                            </a>
+                            <p>PENICILLIN</p>
+                    </div>
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/americano/">
+                                <img src="https://vinepair.com/wp-content/uploads/2018/03/Americano-Recipe-card.jpg" alt="">
+                            </a>
+                            <p>AMERICANO</p>
+                    </div>
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/paloma/">
+                                <img src="https://vinepair.com/wp-content/uploads/2022/08/paloma-card.jpg" alt="">
+                            </a>
+                            <p>PALOMA</p>
+                    </div>
+                    <div class="column">
+                            <a href="https://vinepair.com/cocktail-recipe/bloody-mary/">
+                                <img src="https://vinepair.com/wp-content/uploads/2022/01/50mostpopularcocktails2022_internal_bloodymary.jpg" alt="">
+                            </a>
+                            <p>BLOODY MARY</p>
+                        </div>
+                </div><br>
+            </div>
+        </div>
+
+       
+    </div>
+    <script >
+  function filterFunction() {
+  var input, filter, container, row, column, i, j;
+  input = document.getElementById("filterInput");
+  filter = input.value.toUpperCase();
+  container = document.getElementsByClassName("container")[0];
+  row = container.getElementsByClassName("row");
+  for (i = 0; i < row.length; i++) {
+    column = row[i].getElementsByClassName("column");
+    for (j = 0; j < column.length; j++) {
+      if (column[j].textContent.toUpperCase().indexOf(filter) > -1) {
+        column[j].style.display = "";
+      } else {
+        column[j].style.display = "none";
+      }
+    }
+  }
+}
+    </script>
+</body>
+</html>
